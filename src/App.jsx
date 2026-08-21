@@ -2,32 +2,56 @@ export default function Portfolio() {
   const projects = [
     {
       title: "AI Mood App",
-      desc: "An intelligent mood-based application using creative UI interactions and smart recommendations.",
+      desc: `-Developed an AI-powered mood analysis web app that allows users to track and understand their emotional state.
+-Designed an interactive mood journal where users can record their daily feelings and receive personalized mood insights.
+-Implemented mood-based recommendations including music and wellness suggestions.
+-Created an intuitive and visually engaging interface for displaying mood results and recommendations.
+-Tech Stack: HTML, CSS, JavaScript`,
       link: "https://ai-mood-app-gold.vercel.app/",
     },
     {
       title: "Colour Analysis App",
-      desc: "A stylish personal colour analysis web app for discovering ideal palettes and aesthetics.",
+      desc: `-Developed a personalized colour analysis web app that helps users discover suitable colour palettes based on their individual features and preferences.
+-Designed an interactive questionnaire covering undertone, contrast, and depth to determine the user's overall colour profile.
+-Implemented a recommendation system that generates personalized colour palettes based on the user's responses.
+-Created a clean and aesthetic user interface focused on intuitive navigation, interactive results, and visual colour presentation.
+-Tech Stack: HTML, CSS, JavaScript`,
       link: "https://colour-analysis-app-alpha.vercel.app/",
     },
     {
       title: "Fashion Website",
-      desc: "A modern fashion-themed responsive website with elegant layouts and trendy UI design.",
+      desc:`-Developed a modern fashion-themed responsive website with elegant layouts and a visually engaging user interface.
+-Designed responsive web pages with clean navigation and structured content for an improved browsing experience.
+-Implemented stylish UI elements, typography, and layouts to create a premium fashion-focused aesthetic.
+-Optimized the website for different screen sizes using responsive design principles.
+-Tech Stack: HTML, CSS, JavaScript`,
       link: "https://github.com/gitikaap/Fashion_website",
     },
     {
-      title: "School Website",
-      desc: "A clean and informative school website featuring structured pages and responsive design.",
-      link: "https://github.com/gitikaap/school_website",
-    },
+    title: "School Website",
+    desc: `- Developed a clean and informative school website with structured pages for presenting academic and institutional information.
+- Designed a responsive user interface to provide a consistent browsing experience across different screen sizes.
+- Organized website content into clearly structured sections for easy navigation and accessibility.
+- Implemented modern layouts and styling to create a professional and user-friendly school website.
+- Tech Stack: HTML, CSS, JavaScript`,
+    link: "https://github.com/gitikaap/school_website",
+},
     {
       title: "Guess The Random Number",
-      desc: "A Python-based guessing game focused on logic building and interactive gameplay.",
+      desc:`- Developed a Python-based guessing game to strengthen programming logic and problem-solving skills.
+- Implemented random number generation to create a dynamic number-guessing experience.
+- Designed an interactive gameplay flow with user input, conditional logic, and repeated attempts.
+- Added logic to provide feedback based on whether the guessed number is higher or lower than the target.
+- Tech Stack: Python`,
       link: "https://github.com/gitikaap/Guess_the_random_number_python",
     },
     {
       title: "Calculator Python",
-      desc: "A simple calculator application built in Python supporting essential arithmetic operations.",
+      desc:`- Developed a Python-based calculator application supporting essential arithmetic operations.
+- Implemented user input handling and mathematical operations for performing calculations.
+- Designed a simple and interactive program structure for easy and efficient use.
+- Applied conditional logic and programming fundamentals to handle different arithmetic operations.
+- Tech Stack: Python`,
       link: "https://github.com/gitikaap/Calculator_python",
     },
   ];
@@ -293,9 +317,9 @@ export default function Portfolio() {
                   {project.title}
                 </h3>
 
-                <p className="text-gray-300 mb-6">
-                  {project.desc}
-                </p>
+                <p className="text-gray-300 mb-6 whitespace-pre-line">
+    {project.desc}
+</p>
 
                 <div className="flex gap-3">
                   <a
