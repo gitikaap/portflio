@@ -55,6 +55,62 @@ export default function Portfolio() {
       link: "https://github.com/gitikaap/Calculator_python",
     },
   ];
+  const certifications = [
+    {
+        title: "SQL (Intermediate)",
+        issuer: "HackerRank",
+        date: "May 19, 2026",
+        image: "/certificates/sql.png",
+    },
+    {
+        title: "Python (Basic)",
+        issuer: "HackerRank",
+        date: "March 29, 2026",
+        image: "/certificates/python.png",
+    },
+    {
+        title: "Java (Basic)",
+        issuer: "HackerRank",
+        date: "May 28, 2026",
+        image: "/certificates/java.png",
+    },
+    {
+        title: "Effective Time Management",
+        issuer: "Tech Veda",
+        date: "October 29, 2025",
+        image: "/certificates/time-management.png",
+    },
+    {
+        title: "CS205: Building with Artificial Intelligence",
+        issuer: "Saylor Academy",
+        date: "December 6, 2025",
+        image: "/certificates/ai-building.png",
+    },
+    {
+        title: "Technology Job Simulation",
+        issuer: "Deloitte",
+        date: "December 31, 2025",
+        image: "/certificates/deloitte.png",
+    },
+    {
+        title: "Advanced Software Engineering Job Simulation",
+        issuer: "Walmart Global Tech / Forage",
+        date: "January 11, 2026",
+        image: "/certificates/walmart.png",
+    },
+    {
+        title: "Contributor — GSSoC 2026",
+        issuer: "GirlScript Summer of Code",
+        date: "2026",
+        image: "/certificates/gssoc.png",
+    },
+    {
+        title: "Introduction to Artificial Intelligence",
+        issuer: "Infosys / Springboard",
+        date: "January 31, 2026",
+        image: "/certificates/infosys-ai.png",
+    },
+];
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden font-sans">
@@ -160,10 +216,7 @@ export default function Portfolio() {
             <h2 className="text-4xl font-bold mb-6">About Me</h2>
 
             <p className="text-gray-300 leading-relaxed text-lg">
-              I'm a certified Artificial Intelligence and Machine Learning
-              student currently pursuing B.Tech CSE with specialization in AI &
-              ML. I enjoy building stylish web applications, solving logical
-              problems, and continuously learning modern technologies.
+              I’m a certified Artificial Intelligence and Machine Learning student currently pursuing my B.Tech in Computer Science Engineering with a specialization in AI & ML, and I am now in my 2nd year. I enjoy building stylish and interactive web applications, solving logical and programming problems, and continuously learning modern technologies to strengthen my technical skills.
             </p>
           </div>
 
@@ -230,7 +283,7 @@ export default function Portfolio() {
               </p>
 
               <p className="text-white font-semibold">
-                TGPA (1st Semester): 9.32
+                CGPA: 9.33
               </p>
             </div>
           </div>
@@ -347,6 +400,49 @@ export default function Portfolio() {
           ))}
         </div>
       </section>
+      {/* Certifications */}
+<section className="py-20">
+    <div className="max-w-6xl mx-auto px-6">
+        
+        <h2 className="text-4xl font-bold mb-4">
+            Certifications
+        </h2>
+
+        <p className="text-gray-400 mb-12">
+            Certifications and achievements that showcase my continuous learning and technical growth.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6">
+            {certifications.map((certification, index) => (
+                <div
+                    key={index}
+                    className="group relative rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition"
+                >
+                    <h3 className="text-2xl font-bold mb-3">
+                        {certification.title}
+                    </h3>
+
+                    <p className="text-gray-300 mb-2">
+                        {certification.issuer}
+                    </p>
+
+                    <p className="text-gray-400 mb-6">
+                        {certification.date}
+                    </p>
+
+                    <a
+                        href={certification.image}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block px-5 py-3 rounded-xl bg-white text-black hover:bg-gray-200 transition"
+                    >
+                        View Certificate
+                    </a>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
 
       {/* Contact */}
       <section
